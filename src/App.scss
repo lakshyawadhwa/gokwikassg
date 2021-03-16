@@ -1,0 +1,121 @@
+$main-color-light: #25303d;
+$main-color-dark: #0e151d;
+$gradient-purplue: #c503d0;
+$gradient-yellow: #febf09;
+
+.wrapper {
+  height: 100vh;
+  div.header {
+    background-image: linear-gradient(
+      to right,
+      #25303d,
+      #1f2935,
+      #19222d,
+      #141c25,
+      #0e151d
+    );
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    div.header-logo {
+      display: flex;
+      flex-flow: column;
+      position: relative;
+      top: 20%;
+      height: max-content;
+      img.logo {
+        width: 200px;
+      }
+      span {
+        margin-top: 1rem;
+        span.gradient {
+          font-size: 26px;
+          font-weight: 700;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-image: -webkit-linear-gradient(
+            180deg,
+            #fece00 0%,
+            #ff1d79 50%,
+            #c200d5 100%
+          );
+        }
+      }
+    }
+    img.paytm-ss {
+      height: 70%;
+      position: absolute;
+      top: 70%;
+    }
+  }
+  div.bottom-half-wrapper {
+    top: 12%;
+    position: relative;
+    main {
+      padding: 2rem;
+      padding-bottom: 0.25rem;
+      height: 44%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      @media only screen and (max-width: 374px) {
+        padding: 1rem;
+        padding-bottom: 0.25rem;
+      }
+      p {
+        text-align: center;
+        font-size: 18px;
+      }
+      input#phone-input {
+        height: 3rem;
+        border-radius: 2rem;
+        width: 90%;
+        border: 0.5px solid #d4d4d4;
+        background: #f5f6f9;
+        text-align: center;
+        outline: none;
+        font-weight: 700;
+        font-size: 20px;
+      }
+      input#phone-input::placeholder {
+        text-align: center;
+        color: #bfbebe;
+        font-weight: 600;
+      }
+      small {
+        font-size: 10px;
+      }
+      button {
+        height: 3rem;
+        width: 90%;
+        border: 0.5px solid #d4d4d4;
+        background: #c5c5c5;
+        border-radius: 3rem;
+        color: white;
+        font-weight: 800;
+        box-sizing: content-box;
+        margin-top: 1rem;
+        outline: none;
+        &.active {
+          background-color: #0d9fe3;
+          box-shadow: 0px 10px 16px -2px #0d9fe387;
+          border: none;
+        }
+      }
+    }
+    .footer {
+      font-size: 0.75rem;
+      display: flex;
+      font-weight: 600;
+      color: #c4c4c4;
+      /* align-items: center; */
+      justify-content: center;
+      img {
+        margin: 0 0.25rem;
+        height: 1rem;
+      }
+    }
+  }
+}
